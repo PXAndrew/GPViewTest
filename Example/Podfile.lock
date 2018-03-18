@@ -1,0 +1,16 @@
+PODS:
+  - GPViewTest (0.1.0)
+
+DEPENDENCIES:
+  - GPViewTest (from `../`)
+
+EXTERNAL SOURCES:
+  GPViewTest:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GPViewTest: 7632467dba195da52de7dcfd1654fba1eaf06c8f
+
+PODFILE CHECKSUM: a6aa5090a2728f58bab2d4058816ae2cfa09e680
+
+COCOAPODS: 1.4.0

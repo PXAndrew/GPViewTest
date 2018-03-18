@@ -7,12 +7,20 @@
 //
 
 #import "GPAppDelegate.h"
+#import "GPViewController.h"
 
 @implementation GPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[GPViewController alloc] init]];
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

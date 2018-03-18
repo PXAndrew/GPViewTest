@@ -7,6 +7,7 @@
 //
 
 #import "GPViewController.h"
+#import "GPTestViewController.h"
 
 @interface GPViewController ()
 
@@ -18,7 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    GPTestViewController *testViewController = [[GPTestViewController alloc] init];
+    [self.navigationController pushViewController:testViewController animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

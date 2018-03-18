@@ -1,0 +1,6 @@
+framework module GPViewTest {
+  umbrella header "GPViewTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
